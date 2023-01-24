@@ -1,0 +1,12 @@
+{% extends 'downloader/pages/index.html' %}
+
+{% block content_body %}
+<div class="content-videos">
+    <form action="." method="POST">
+        {% csrf_token %}
+        <label for="url-video" name="url-label">Digite a URL do Video:</label>
+        <input type="text" placeholder="URL" name="url-video">
+        <button type="submit" class="btn button-mp4">Baixar MP4</button>
+    </form>
+</div>
+{% endblock content_body %}

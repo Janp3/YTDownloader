@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header {
+    width: 100vw;
+    font-size: 2rem;
+}
+.menu {
+    background: lightblue;
+    margin: 0 auto;
+    max-width: 120rem;
+}
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list li {
+    padding: 2rem;
+    list-style: none;
+}
+.menu-list li a {
+    text-decoration: none;
+}
+main {
+    background: lightgray;
+    margin: auto;
+}
+.container{
+    background: lightgreen;
+    max-width: 120rem;
+    margin: 0 auto; 
+    padding: 1rem;
+}
+.content-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightpink;
+    min-height: 50rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-videos form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    background: lightsalmon;
+    padding: 3rem;
+}
+.content-videos form input {
+    font-size: 1.4rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 100%;
+}
+.content-videos form label {
+    align-self: flex-start;
+        font-size: 2rem;
+}
+
+.content-videos form input, label, button {
+    margin: 1rem 0;
+}
+.btn {
+    font-size: 1.5rem;
+    min-height: 3rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}

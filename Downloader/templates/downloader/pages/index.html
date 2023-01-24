@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'downloader/css/style.css' %}">
+    <title>YTDownloader</title>
+</head>
+<header>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li><a href="{% url 'app_downloader:home' %}">Home</a></li>
+            <li><a href="{% url 'app_downloader:videos' %}">Download Videos</a></li>
+            <li><a href="">Download Music</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<main>
+    {% block content_body %}
+    {% endblock content_body %}
+</main>
+</body>
+<footer>
+    <div class="container">
+        <div class="content">
+            <h1>Redes sociais</h1>
+            <div class="item">
+                <h2><a href="">Instagram</a></h2>
+                <h2><a href="">Linkedin</a></h2>
+                <h2><a href="">Github</a></h2>
+            </div>
+            <h1>Atenção</h1>
+
+            <div class="item-2">
+                <p>Esse é apenas um material de estudos não me responsabilizo por sua utilização</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
