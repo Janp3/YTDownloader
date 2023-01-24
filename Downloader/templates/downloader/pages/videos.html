@@ -2,11 +2,20 @@
 
 {% block content_body %}
 <div class="content-videos">
+    {% if messages %}
+        {% for msg in messages %}
+        <div class="msg">
+            <h2>{{ msg }}</h2>
+        </div>
+        {% endfor %}
+    {% endif %}
     <form action="." method="POST">
         {% csrf_token %}
         <label for="url-video" name="url-label">Digite a URL do Video:</label>
         <input type="text" placeholder="URL" name="url-video">
         <button type="submit" class="btn button-mp4">Baixar MP4</button>
     </form>
+    <p>Após clicar em baixar espere alguns segundos</p>
+
 </div>
 {% endblock content_body %}

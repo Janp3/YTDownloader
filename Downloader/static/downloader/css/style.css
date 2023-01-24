@@ -6,16 +6,21 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+:root {
+    --color01: #100C15;
+    --color02: #331B33;
+    --color03: #8463AD;
+}
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 header {
     width: 100vw;
+    background: var(--color01);
     font-size: 2rem;
 }
 .menu {
-    background: lightblue;
     margin: 0 auto;
     max-width: 120rem;
 }
@@ -29,24 +34,27 @@ header {
     list-style: none;
 }
 .menu-list li a {
+    color: #fff;
     text-decoration: none;
 }
+.menu-list li a:hover {
+    color: var(--color03);
+}
 main {
-    background: lightgray;
+    position: relative;
     margin: auto;
 }
 .container{
-    background: lightgreen;
     max-width: 120rem;
     margin: 0 auto; 
     padding: 1rem;
 }
 .content-videos {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: lightpink;
     min-height: 50rem;
 }
 .content {
@@ -61,7 +69,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 50rem;
-    background: lightsalmon;
+    background: var(--color01);
     padding: 3rem;
 }
 .content-videos form input {
@@ -71,12 +79,32 @@ main {
     width: 100%;
 }
 .content-videos form label {
+    color: var(--color03);
     align-self: flex-start;
-        font-size: 2rem;
+    font-size: 2rem;
 }
 
 .content-videos form input, label, button {
     margin: 1rem 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: var(--color01);
+}
+.content-videos form input:focus {
+    transition: all 500ms;
+    border-radius: 2rem;
+}
+.content {
+    color: #fff;
+}
+footer a {
+    color: var(--color03);
+    font-size: 1.8rem;
+    text-decoration: none;
 }
 .btn {
     font-size: 1.5rem;
@@ -85,3 +113,44 @@ main {
     border: none;
     cursor: pointer;
 }
+.content-videos p {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 5rem;
+}
+.button-mp4{
+    color: #fff;
+    background: var(--color03);
+    border-radius: 1rem;
+}
+.button-mp4:hover{
+    transition: all 300ms;
+    background: var(--color02);
+}
+.alert-warning {
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    background: rgb(255, 238, 0);
+    padding: 2rem;
+}
+.alert {
+    position: relative;
+    bottom: 2rem;
+}
+.content h1 {
+    font-size: 3rem;
+    margin: 1rem 0 ;
+}
+.content h2 {
+    margin: .5rem 0;
+    text-align: center;
+}
+.alert-success {
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    background: rgb(137, 244, 137);
+    padding: 2rem;
+}
+

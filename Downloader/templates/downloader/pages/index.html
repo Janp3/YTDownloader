@@ -13,7 +13,7 @@
         <ul class="menu-list">
             <li><a href="{% url 'app_downloader:home' %}">Home</a></li>
             <li><a href="{% url 'app_downloader:videos' %}">Download Videos</a></li>
-            <li><a href="">Download Music</a></li>
+            <li><a href="{% url 'app_downloader:musics' %}">Download Music</a></li>
         </ul>
     </nav>
 </header>
@@ -22,15 +22,14 @@
     {% block content_body %}
     {% endblock content_body %}
 </main>
-</body>
 <footer>
     <div class="container">
         <div class="content">
             <h1>Redes sociais</h1>
             <div class="item">
-                <h2><a href="">Instagram</a></h2>
-                <h2><a href="">Linkedin</a></h2>
-                <h2><a href="">Github</a></h2>
+                <h2><a href="https://www.instagram.com/jean_ska/">Instagram</a></h2>
+                <h2><a href="https://www.linkedin.com/in/jean-costa-goncalves/">Linkedin</a></h2>
+                <h2><a href="https://github.com/janp3">Github</a></h2>
             </div>
             <h1>Atenção</h1>
 
@@ -40,5 +39,6 @@
         </div>
     </div>
 </footer>
+</body>
 
 </html>

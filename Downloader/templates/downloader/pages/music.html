@@ -1,0 +1,21 @@
+{% extends 'downloader/pages/index.html' %}
+
+{% block content_body %}
+<div class="content-videos">
+    {% if messages %}
+    {% for message in messages %}
+        <div class="alert {% if message.tags %} alert-{{ message.tags }}"{% endif %}>
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+    <form action="." method="POST">
+        {% csrf_token %}
+        <label for="url" name="url-label">Digite a URL da Música:</label>
+        <input type="text" placeholder="URL" name="url-music">
+        <button type="submit" class="btn button-mp4">Baixar MP3</button>
+    </form>
+    <p>Após clicar em baixar espere alguns segundos</p>
+</div>
+{% endblock content_body %}
